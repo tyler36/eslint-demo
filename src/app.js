@@ -1,3 +1,3 @@
-const double = ($number) => $number * 2;
+const double = $number => $number * 2;
 
-double(2);
+double( 2 );
