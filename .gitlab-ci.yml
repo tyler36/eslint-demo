@@ -11,13 +11,9 @@ eslint:
   before_script:
     - npm ci
   script: |
-    set +euo pipefail  # don't abort if any following command fails
     npm run lint:js -- --format=junit --output-file=logs/eslint-junit.xml
-    npm run lint:js -- --format gitlab
   artifacts:
     paths:
       - logs/eslint-junit.xml
-      - gl-codequality.json
     reports:
       junit: logs/eslint-junit.xml
-      codequality: gl-codequality.json
