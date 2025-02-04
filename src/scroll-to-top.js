@@ -4,7 +4,7 @@ if ( btnScrollToTop ) {
     // OnClick: Scroll to top
     btnScrollToTop.addEventListener( 'click', () => {
         window.scrollTo( {
-    top: 0,
+            top: 0,
             behavior: 'smooth',
         } );
     } );
