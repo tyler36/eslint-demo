@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: "☁️ checkout repository"
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
       - run: npm i
 
       - name: "🧹 Run Eslint"
