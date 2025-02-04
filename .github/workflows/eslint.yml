@@ -24,7 +24,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - run: npm i
+      - name: '📦 Install NPM Dependencies'
+        run: npm install
 
       - name: "🧹 Run Eslint"
         uses: reviewdog/action-eslint@v1
