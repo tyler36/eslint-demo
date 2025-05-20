@@ -17,6 +17,7 @@ permissions: {
 
 jobs:
   lint:
+    name:  'lint'
     runs-on: ubuntu-latest
     steps:
       - name: "☁️ checkout repository"
