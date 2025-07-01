@@ -31,5 +31,6 @@ jobs:
       - name: "🧹 Run Eslint"
         uses: reviewdog/action-eslint@v1
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           fail_level: 'error'
