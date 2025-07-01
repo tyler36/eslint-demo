@@ -29,7 +29,8 @@ jobs:
         run: npm install
 
       - name: "🧹 Run Eslint"
-        uses: reviewdog/action-eslint@v1
+        uses: reviewdog/action-eslint@v1.33.2
         with:
-          reporter: github-check
-          fail_level: 'error'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          fail_level: error
+          filter_mode: nofilter
