@@ -32,6 +32,6 @@ jobs:
         uses: reviewdog/action-eslint@v1.33.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-check
+          reporter: github-pr-review
           fail_level: 'error'
           eslint_flags: 'src/'
