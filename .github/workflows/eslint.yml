@@ -34,3 +34,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           fail_level: 'error'
+          eslint_flags: 'src/'
